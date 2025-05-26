@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio Arthur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <!-- Imagem no canto esquerdo -->
+    <div class="navbar-img">
+      <img src="imagens/shingeki.png" alt="Logo" />
+    </div>
+
+    <!-- Marca centralizada -->
+    <div class="navbar-title">Arthur</div>
+
+    <!-- Menu e pesquisa no canto direito -->
+    <div class="navbar-right">
+      <div class="search-box">
+        <input type="text" placeholder="Pesquisar..." />
+      </div>
+
+      <!-- Menu Hamburguer -->
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="ph ph-list"></i>
+      </div>
+    </div>
+
+    <!-- Menu lateral oculto -->
+    <nav class="nav-menu" id="nav-menu">
+      <div class="menu-title">Atalhos</div>
+      <a href="#"><i class="ph ph-house"></i> Início</a>
+      <a href="#"><i class="ph ph-user"></i> Sobre</a>
+      <a href="#"><i class="ph ph-phone"></i> Contato</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <!-- Conteúdo futuro -->
+  </main>
+
+  <footer class="footer">
+    <h1>EM BREVE!</h1>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('nav-menu');
+
+    // Abre/fecha o menu ao clicar no hamburguer
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      menu.classList.toggle('active');
+    });
+
+    // Fecha o menu ao clicar fora dele
+    document.addEventListener('click', (e) => {
+      if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+        menu.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
