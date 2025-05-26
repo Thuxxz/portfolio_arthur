@@ -10,27 +10,27 @@
 </head>
 <body>
   <header class="navbar">
-    <!-- Imagem no canto esquerdo -->
+    <!--Imagem do canto esquerdo -->
     <div class="navbar-img">
       <img src="imagens/shingeki.png" alt="Logo" />
     </div>
 
-    <!-- Marca centralizada -->
+    <!-- Marca -->
     <div class="navbar-title">Arthur</div>
 
-    <!-- Menu e pesquisa no canto direito -->
+    <!-- Menu e pesquisa -->
     <div class="navbar-right">
       <div class="search-box">
         <input type="text" placeholder="Pesquisar..." />
       </div>
 
-      <!-- Menu Hamburguer -->
+      <!-- Menu -->
       <div class="menu-toggle" id="menu-toggle">
         <i class="ph ph-list"></i>
       </div>
     </div>
 
-    <!-- Menu lateral oculto -->
+    <!-- Menu lateral-->
     <nav class="nav-menu" id="nav-menu">
       <div class="menu-title">Atalhos</div>
       <a href="#"><i class="ph ph-house"></i> Início</a>
@@ -40,7 +40,7 @@
   </header>
 
   <main class="main-content">
-    <!-- Conteúdo futuro -->
+    <!-- Em breve -->
   </main>
 
   <footer class="footer">
@@ -51,7 +51,7 @@
     const toggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('nav-menu');
 
-    // Abre/fecha o menu ao clicar no hamburguer
+    // Abre e fecha o menu
     toggle.addEventListener('click', (e) => {
       e.stopPropagation();
       menu.classList.toggle('active');
